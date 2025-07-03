@@ -1,0 +1,15 @@
+.info {
+  color: rgb(30, 0, 255);
+  background-color: rgb(251, 105, 105);
+  font-weight: 700;
+  /* text-decoration: underline; */
+  /* text-decoration: wavy underline red; */
+  /* text-decoration: dotted line-through red; */
+  /* text-decoration: dashed line-through red; */
+  /* text-decoration: dashed overline red; */
+  text-decoration: overline;
+}
+
+.demo {
+  letter-spacing: 5px;
+}
