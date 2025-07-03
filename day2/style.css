@@ -7,9 +7,13 @@
   /* text-decoration: dotted line-through red; */
   /* text-decoration: dashed line-through red; */
   /* text-decoration: dashed overline red; */
-  text-decoration: overline;
+  text-decoration: line-through 5px;
 }
 
 .demo {
-  letter-spacing: 5px;
+  /* letter-spacing: 5px; */
+  line-height: 1.5;
+  font-size: 34px;
+  /* Absolute / Relative */
+  font-family: Avant Garde, Arial, sans-serif;
 }
