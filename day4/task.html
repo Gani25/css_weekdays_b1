@@ -1,0 +1,72 @@
+<!-- Recreate Signal
+1. Create a div & 3 sibling div inside it
+2. For the outer div set 
+    1. h = 200px
+    2. w = 70px
+    3. border = 2px solid black
+3. For the outer div
+    1. h = 50px
+    2. w = 50px
+    3. border = 2px solid black
+    4. margin = 10px
+4. Make inner divs circular in shape and give then individual color
+5. Red → Yellow → Green -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .outer {
+            height: 200px;
+            width: 70px;
+            border: 2px solid black;
+            margin-inline: auto;
+            /* border-top-right-radius: 40px;
+            border-top-left-radius: 40px; */
+            border-radius: 40px 40px 0px 0px;
+
+        }
+
+        .inner {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            margin: 10px auto;
+            border-radius: 50%;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SIGNAL</h1>
+    <div class="outer">
+        <div class="red inner"></div>
+        <div class="yellow inner"></div>
+        <div class="green inner"></div>
+    </div>
+</body>
+
+</html>
