@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            margin-block: 30px;
+        }
+
+        .container {
+            width: 90%;
+            height: 600px;
+            background-color: wheat;
+            display: grid;
+            margin-inline: auto;
+            /* grid-template-rows: 100px 100px 100px;
+            grid-template-columns: 150px 150px 150px 150px; */
+            /* grid-template-columns: auto 400px auto auto; */
+            /* grid-template-rows: auto auto auto; */
+            /* Fraction Units fr */
+
+            /* width= 800px / 5 = 150px -> 2fr means 2time of 150  */
+            /* grid-template-columns: 1fr 2fr 1fr 1fr; */
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+
+
+
+            /* row-gap: 30px;
+            column-gap: 45px; */
+            grid-gap: 30px 45px;
+        }
+
+        .item {
+            font-size: 1.5rem;
+            width: 80px;
+            height: 50px;
+            background-color: chocolate;
+
+        }
+
+        .item1 {
+            background-color: aqua;
+            grid-row: 1/span 2;
+            /* grid-row: 1/-1; */
+            grid-column: 2/span 2;
+            width: 100%;
+            height: 100%;
+        }
+
+        .item8 {
+            background-color: chartreuse;
+            grid-row: 2/3;
+            grid-column: 3/4;
+            width: 80%;
+            height: 80%;
+            /* z-index: -1; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Grid Model</h1>
+
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item item8">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
