@@ -22,6 +22,13 @@ body {
 p {
   font-size: 16px;
 }
+/* Styling Radio Btn */
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked) {
+  visibility: hidden;
+  position: absolute;
+  /* display: none; */
+}
 
 /* Classes Stylings */
 .section-fluid-main {
@@ -52,10 +59,103 @@ p {
   margin-left: 500px;
   display: block;
 }
+.title-up {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+h4 span {
+  text-decoration: line-through;
+  font-size: 20px;
+  opacity: 0.6;
+  margin-left: 15px;
+}
+
+/* Description Button */
+.desc-btn:checked + label,
+.desc-btn:not(:checked) + label {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1.2;
+  display: inline-block;
+  margin-right: 25px;
+  opacity: 0.5;
+  transition: all 200ms linear;
+}
+.desc-btn:checked + label {
+  opacity: 1;
+}
+.desc-btn:not(:checked) + label:hover {
+  opacity: 0.8;
+}
+
+.desc-sec {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  opacity: 0;
+  transition: all 250ms linear;
+  transform: translateY(20px);
+}
+.desc-sec.accor-2 {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+}
+
+#desc-1:checked ~ .accor-1 {
+  opacity: 1;
+  transform: translateY(0px);
+}
+#desc-2:checked ~ .accor-2 {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* .accor-2 {
+  display: flex;
+  gap: 20px;
+} */
+.section-inline {
+  display: inline-block;
+  margin-right: 20px;
+}
+.section-inline p span {
+  font-size: 30px;
+  line-height: 1.1;
+}
 
 /* Images for Color */
 label.first-color {
   background-image: url("./images/color1.jpg");
+}
+
+.back-color {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(196deg, #f1a9a9, #e66767);
+  z-index: -1;
 }
 
 .img-wrap {
