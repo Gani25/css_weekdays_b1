@@ -88,6 +88,13 @@ h4 span {
   margin-left: 15px;
 }
 
+h5 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
 /* Description Button */
 .desc-btn:checked + label,
 .desc-btn:not(:checked) + label {
@@ -169,4 +176,75 @@ label.first-color {
   background-repeat: no-repeat;
   background-size: 100%;
   background-image: url("./images/chair1.png");
+}
+
+/* Color Btn */
+.color-btn:checked + label,
+.color-btn:not(:checked) + label {
+  height: 40px;
+  width: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
+  border: 3px solid transparent;
+  background-position: center;
+  background-size: cover;
+  transition: all 200ms linear;
+  cursor: pointer;
+  margin-right: 10px;
+  display: inline-block;
+}
+.color-btn:not(:checked) + label:hover {
+  transform: scale(1.1);
+}
+.color-btn:checked + label {
+  border-color: #434343;
+  transform: scale(1.2);
+}
+label.color-1 {
+  background-image: url("images/color1.jpg");
+  margin-left: 500px;
+}
+label.color-2 {
+  background-image: url("images/color2.jpg");
+}
+label.color-3 {
+  background-image: url("images/color3.jpg");
+}
+label.color-4 {
+  background-image: url("images/color4.jpg");
+}
+label.color-5 {
+  background-image: url("images/color5.jpg");
+}
+label.color-6 {
+  background-image: url("images/color6.jpg");
+}
+
+/* Add To Cart Button  */
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2;
+  height: 48px;
+  width: 210px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 50px;
+  text-decoration: none;
+  background-color: #944852;
+  transition: all 250ms linear;
+  box-shadow: 0 6px 15px 0 rgba(16, 39, 112, 0.15);
+  letter-spacing: 1px;
+}
+.btn:hover {
+  box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
+  background-color: #333;
+}
+.icon {
+  padding-right: 7px;
+  font-size: 20px;
 }
