@@ -7,11 +7,16 @@
     <title>SPRK TRAVELS | EXPLORE WORLD WITH US</title>
     <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./resources/css/styles.css">
+
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div id="wrapper">
-
+        <!-- navbar -->
         <nav class="background nav-bg">
             <div class="container nav-container">
                 <div class="logo">
@@ -29,8 +34,64 @@
 
         </nav>
 
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-container">
+
+                <!-- Video -->
+                <video muted loop autoplay class="hero-video">
+                    <source src="https://videos.pexels.com/video-files/2169880/2169880-uhd_2560_1440_30fps.mp4">
+                </video>
+                <div class="video-overlay"></div>
+                <!-- Text-Content -->
+                <div class="hero-content">
+                    <div class="hero-text">
+
+                        <h1 class="main-heading"><i class="fa-solid fa-globe"></i>Explore World With Us</h1>
+                        <h2 class="sub-heading">We help you <span class="moving-text"></span></h2>
+                        <div class="para-div">
+                            <p class="paragraph">Travel isn't just about places — it's about moments. At SPRK Travels,
+                                we specialize in
+                                crafting
+                                luxury travel
+                                experiences tailored to your preferences, down to the finest detail. Discover the world
+                                in
+                                comfort and style.</p>
+
+                        </div>
+                        <a href="" class="btn-primary">Start Your Journey</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
     </div>
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        const phrases = [
+            "make unforgettable memories",
+            "discover hidden gems",
+            "live the journey",
+            "create family memories",
+            "travel beyond borders",
+            "escape the ordinary"
+        ];
+
+        var typed = new Typed('.moving-text', {
+            strings: phrases,
+            smartBackspace: true,
+            typeSpeed: 100, // 0.1 sec
+            backSpeed: 80,
+            backDelay: 1000,
+            loop: true,
+            shuffle: true,
+
+        });
+    </script>
 </body>
 
 </html>
