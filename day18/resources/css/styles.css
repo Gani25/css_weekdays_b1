@@ -233,6 +233,90 @@ a.nav-link:hover::before {
 
 /* Packages */
 #packages {
+  position: relative;
   margin-top: 10rem;
+  padding-top: 6rem;
   text-align: center;
+  padding-bottom: 15rem;
+}
+
+.package-flex {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.package {
+  cursor: pointer;
+  box-shadow: 5px 5px 7px 0 #0000004b;
+  padding: 3rem 7rem;
+  border-radius: 1rem;
+  font-size: 1.7rem;
+}
+.package:hover {
+  transform: translateY(-2rem);
+}
+
+.fadded-text {
+  color: var(--background_color);
+  font-size: 8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  user-select: none;
+  position: absolute;
+  bottom: -2.2rem;
+  left: 6rem;
+}
+
+/* Contact Page */
+#cta {
+  text-align: center;
+}
+.contact-container {
+  padding-top: 6rem;
+}
+.contact-main-heading {
+  margin-bottom: 3rem;
+  color: var(--primary_color);
+  font-size: 5rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.contact-sub-heading {
+  color: #343d68aa;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  padding-bottom: 7rem;
+}
+.form-container {
+  width: 80%;
+  margin-inline: auto;
+  padding-bottom: 10rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-field {
+  padding: 1rem 2rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  box-shadow: 5px 5px 7px 0 #000000a4;
+  border-radius: 0.7rem;
+  border: none;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.form-button {
+  border: none;
+  font-size: 1.4rem;
+  padding-inline: 4rem;
+  padding-block: 1rem;
+  margin-top: 3rem;
+}
+.form-button:hover {
+  transform: scale(0.9);
 }
