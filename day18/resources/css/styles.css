@@ -188,3 +188,51 @@ a.nav-link:hover::before {
 .btn-primary:hover::before {
   width: 100%;
 }
+
+/* Card Section | Destinations */
+.destination-container {
+  text-align: center;
+  padding-bottom: 6rem;
+}
+.destination-heading {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.destination-heading i {
+  color: var(--primary_color);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 3rem;
+}
+
+.card {
+  height: 30rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text_color_light);
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+  transition: all 0.4s;
+  /* box-shadow: 16px 16px 93px #747474, -16px -16px 93px #ffffff; */
+}
+
+.card:hover {
+  transform: scale(1.15);
+  background-color: rgba(0, 0, 0, 0.7);
+  /* box-shadow: none; */
+}
+
+/* Packages */
+#packages {
+  margin-top: 10rem;
+  text-align: center;
+}
